@@ -1,5 +1,4 @@
-a = 5;
-b = 6;
-console.log('hello world');
-console.log(a - b);
-console.log('haha');
+let idade = 28;
+const age = 28;
+
+console.log(idade, age);
