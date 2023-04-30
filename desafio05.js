@@ -9,3 +9,14 @@ Código Condição de pagamento:
 - Acima de duas vezes, preço normal de etiqueta mais juros de 10%;
 
 */
+const valor_produto = 100;
+const a_vista = valor_produto * (1 - 0.1);
+const Dinheiro_ou_pix = valor_produto * (1 - 0.15);
+const duas_vezes = valor_produto;
+const acimadeduas_vezes = valor_produto * (1 + 0.1);
+
+if (acimadeduas_vezes){
+    console.log(a_vista);
+}
+
+
