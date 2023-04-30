@@ -7,3 +7,21 @@ Classificação:
 - Média entre 5 e 7, recuperação;
 - Média acima de 7, passou de semestre;
 */
+
+const nota1 = 6;
+const nota2 = 5;
+const nota3 = 5;
+
+const media = (nota1 + nota2 + nota3) / 3;
+console.log(media.toFixed(2));
+
+if (media < 5){
+    console.log('reprovação');
+}
+if (media > 5 && media < 7){
+    console.log('recuperação');
+}
+if(media > 7){
+    console.log('Parabéns voce foi aprovado');
+}
+
