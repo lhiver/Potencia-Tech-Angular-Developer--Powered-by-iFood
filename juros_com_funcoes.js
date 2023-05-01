@@ -1,22 +1,30 @@
 
 
-const valor_produto = 100;
-const formade_pagamento = 4;
-const a_vista = valor_produto * (1 - 0.1);
-const Dinheiro_ou_pix = valor_produto * (1 - 0.15);
-const duas_vezes = valor_produto;
-const acimadeduas_vezes = valor_produto * (1 + 0.1);
+const pagamento = 2;
+const preco = 100;
 
-if(formade_pagamento === 1){
-    console.log(a_vista);
+
+function com_desconto (valor,desconto){
+    return (valor - (valor * (desconto /100)));
 }
-else if(formade_pagamento ===2){
-    console.log(Dinheiro_ou_pix);
+
+function com_juros (valor,juros){
+    return (valor + (valor * (juros /100)));
 }
-else if(formade_pagamento === 3){
-    console.log(duas_vezes);
+
+
+if(pagamento === 1){
+    console.log(com_desconto(preco,10));
 }
-else if(formade_pagamento === 4){
-    console.log(acimadeduas_vezes);
+else if(pagamento ===2){
+    console.log(com_juros(preco,10));
 }
+else if(pagamento === 3){
+        console.log('duas_vezes');
+}
+else if(pagamento === 4){
+    console.log('acimadeduas_vezes');
+}
+
+
 
