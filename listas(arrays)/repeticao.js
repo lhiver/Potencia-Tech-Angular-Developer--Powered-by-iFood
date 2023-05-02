@@ -1,4 +1,4 @@
 const nome = 'Rodrigo Souza Pereira';
-for (i = 0; i < 21; i++){
+for (i = 0; i < nome.length; i++){
     console.log(nome[i]);
 }
