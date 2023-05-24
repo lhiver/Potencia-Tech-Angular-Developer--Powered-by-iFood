@@ -30,7 +30,10 @@ class Cardnews extends HTMLElement {
 
         const cardright = document.createElement("div");
         cardright.setAttribute("class","card-right");
+
         const newsimage = document.createElement("img");
+        newsimage.src = "assets/darth-vader.jpg ";
+        newsimage.alt = "Darth vader"
         cardright.appendChild(newsimage);
 
 
