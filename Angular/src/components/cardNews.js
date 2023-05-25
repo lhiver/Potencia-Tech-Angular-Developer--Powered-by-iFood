@@ -32,8 +32,8 @@ class Cardnews extends HTMLElement {
         cardright.setAttribute("class","card-right");
 
         const newsimage = document.createElement("img");
-        newsimage.src = "assets/darth-vader.jpg ";
-        newsimage.alt = "Darth vader"
+        newsimage.src = this.getAttribute("photo") || "assets/default-image.jpg";
+        newsimage.alt = "foto da noticia"
         cardright.appendChild(newsimage);
 
 
@@ -43,7 +43,47 @@ class Cardnews extends HTMLElement {
         return componentRoot;
     }
 
-    styles(){}
+    styles(){
+        const style = document.createElement("style");
+
+        style.textContent = `
+        .card{
+            width: 80%;
+            -webkit-box-shadow: 20px 16px 38px -5px rgba(4,13,13,1);
+            -moz-box-shadow: 20px 16px 38px -5px rgba(4,13,13,1);
+            box-shadow: 20px 16px 38px -5px rgba(4,13,13,1);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .card-left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 10px;
+        }
+        .card-left span{
+            font-weight: 400;
+        }
+        .card-left a{
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .card-left h1{
+            margin-top: 15px;
+            font-size: 25px;
+        }
+        .card-left p{
+            color: gray;
+        }
+        .card-right img{
+            width: 10em;
+        }
+
+        `
+
+        return style;
+    }
 }
 
 customElements.define("card-news", Cardnews);
