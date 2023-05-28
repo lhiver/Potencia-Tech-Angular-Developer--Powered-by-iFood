@@ -41,3 +41,25 @@ let dados2: Array<string> = ["Rodrigo","luana", "thamires"];
 
 //array hibrida
 let infos: (string | number)[] = ["Rodrigo", 27,"luana","thamires"];
+
+//tuplas
+let boleto: [string, number, number] = ["agua conta", 199.90, 345415];
+
+//datas
+let aniversario: Date = new Date ("2023-05-28 05:00");
+console.log(aniversario.toString());
+
+//funcoes 
+//função com number
+function addNumber(x: number, y: number): number{
+    return x + y;
+}
+
+let soma: number = addNumber(5,9);
+console.log(soma);
+
+//função com string
+function addtohello(name :string) :string{
+    return `hello ${name}`;
+}
+console.log(addtohello("Rodrigo"));
