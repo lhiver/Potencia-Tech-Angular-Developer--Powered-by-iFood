@@ -8,6 +8,6 @@ function printaObjeto(pessoa: heroi){
 }
 
 printaObjeto({
-    name: "bruce wayne",
-    vulgo: "batman",
+    name: "ichigo kurasaki",
+    vulgo: "shinigami",
 })
