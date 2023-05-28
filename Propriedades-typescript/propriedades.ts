@@ -63,3 +63,15 @@ function addtohello(name :string) :string{
     return `hello ${name}`;
 }
 console.log(addtohello("Rodrigo"));
+
+//função multi tipos
+function calltophone (phone: number | string):number | string{
+    return phone;
+}
+console.log(calltophone(992619015));
+
+//função assicrona
+
+async function getdatabase(id: number): Promise<string> {
+return "Rodrigo";
+}
