@@ -1,1 +1,1 @@
-Bootcamp focado em aprender angular,javascript e typescript.
+Bootcamp focado em aprender javascript, typescript e angular.
