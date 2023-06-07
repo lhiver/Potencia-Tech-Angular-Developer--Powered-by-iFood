@@ -3,7 +3,7 @@ const numeropar = (num % 2) === 0;
 console.log(numeropar);
 
 if(num === 0) {
-    console.log('Número invalido');
+    console.log('número invalido');
 } else if (numeropar) {
     console.log('o número é par');
 }

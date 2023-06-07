@@ -15,7 +15,7 @@ class pessoa {
 }
 
 const rodrigo = new pessoa('Rodrigo Souza Pereira',28);
-const luanna = new pessoa('Luanna Dias Ferreira', 26);
+const luanna = new pessoa('Luanna Dias santana', 26);
 
 rodrigo.descrever();
 luanna.descrever();
